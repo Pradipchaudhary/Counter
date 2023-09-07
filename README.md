@@ -11,3 +11,23 @@ In this Sass course, you'll learn how to store data in variables, nest CSS, crea
 sass --watch style.scss style.css
 
 ```
+
+Create three files:
+
+\_variables.scss: to add the variables
+\_mixins.scss: to add the functions that we will reuse
+\_card.scss: to add the styles of our cards
+
+_variables you created in the style.scss file and put them in the \_variables.scss file:_
+
+```sass
+
+$fonts: 'Poppins', Helvetica, sans-serif;
+    $primary-color: #ab99ca;
+    $spacing: 2rem;
+    $dark-grey: #999;
+```
+
+For the \_mixins.scss file, this is where we'll create the reusable functions with mixins.
+
+Mixins allow you to create reusable functions. To declare a function you must enter @mixin name_fonction { content } or if your function has a parameter, you must enter @mixin name_fonction($name_variable) { content }.

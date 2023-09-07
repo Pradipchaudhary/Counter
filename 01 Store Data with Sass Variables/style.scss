@@ -1,13 +1,13 @@
-// $heading-color: green;
-$bg: #dff0d8;
-$heading-color: rgb(32, 32, 32);
-$pargraph: rgb(119, 211, 27);
+/* file import */
+
+@import "variables";
+@import "mixins";
+@import "card";
+
 body {
-    background-color: $bg;
-}
-h1 {
-    color: $heading-color;
-}
-p {
-    color: $pargraph;
+    font-family: $fonts; /* variable usage */
+    background-color: $primary-color;
+    padding: $spacing;
+    min-height: 100vh;
+    @include flex-center(); /* using the mixins function */
 }
