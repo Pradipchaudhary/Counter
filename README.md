@@ -14,9 +14,9 @@ sass --watch style.scss style.css
 
 Create three files:
 
-\_variables.scss: to add the variables
-\_mixins.scss: to add the functions that we will reuse
-\_card.scss: to add the styles of our cards
+1. **\_variables.scss:** to add the variables
+2. **\_mixins.scss:** to add the functions that we will reuse
+3. **\_card.scss:** to add the styles of our cards
 
 _variables you created in the style.scss file and put them in the \_variables.scss file:_
 
