@@ -31,3 +31,64 @@ $fonts: 'Poppins', Helvetica, sans-serif;
 For the \_mixins.scss file, this is where we'll create the reusable functions with mixins.
 
 Mixins allow you to create reusable functions. To declare a function you must enter @mixin name_fonction { content } or if your function has a parameter, you must enter @mixin name_fonction($name_variable) { content }.
+
+**Add this code to the \_mixins.scss file:**
+
+```
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* $radius is the parameter of the function */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+```
+
+For the \_card.scss file, add this code to it:
+
+```.card {
+    background-color: white;
+    width: 20rem;
+    overflow: hidden;
+    margin: 2rem;
+    box-shadow: 5px 5px 5px 5px #000;
+    @include border-radius(0.5rem); /* using the mixins function */
+
+    img {
+        height: 15rem;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .card_content {
+        padding: $spacing;
+    }
+
+    .card_title {
+        margin: 0;
+        color: black;
+    }
+
+    .card_description {
+        margin: 0;
+        color: $dark-grey;
+    }
+
+    &_dark {
+
+        background-color: black;
+
+        .card_title {
+            color: white;
+        }
+    }
+
+}
+
+```
