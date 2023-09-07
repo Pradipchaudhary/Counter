@@ -1,0 +1,13 @@
+// $heading-color: green;
+$bg: #dff0d8;
+$heading-color: rgb(32, 32, 32);
+$pargraph: rgb(119, 211, 27);
+body {
+    background-color: $bg;
+}
+h1 {
+    color: $heading-color;
+}
+p {
+    color: $pargraph;
+}
