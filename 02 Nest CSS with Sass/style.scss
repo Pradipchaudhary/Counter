@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        min-width: 1176px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        h1.title {
+            color: #efefef;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+
+            li > a {
+                text-decoration: none;
+                color: #efefef;
+                padding: 10px 16px;
+            }
+        }
+    }
+}

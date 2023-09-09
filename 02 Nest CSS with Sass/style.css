@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  min-width: 1176px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header nav h1.title {
+  color: #efefef;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li > a {
+  text-decoration: none;
+  color: #efefef;
+  padding: 10px 16px;
+}/*# sourceMappingURL=style.css.map */
