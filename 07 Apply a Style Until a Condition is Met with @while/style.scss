@@ -1,0 +1,9 @@
+$x: 1;
+
+@while $x < 10 {
+    .text-#{$x} {
+        width: 100%/9 * $x;
+        background-color: red;
+    }
+    $x: $x + 1;
+}
