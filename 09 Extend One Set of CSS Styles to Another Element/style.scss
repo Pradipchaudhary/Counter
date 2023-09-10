@@ -1,0 +1,10 @@
+.info-important {
+    border: 2px solid green;
+    padding: 50px;
+    margin-bottom: 30px;
+    background-color: purple;
+    color: #efefef;
+}
+.info {
+    @extend .info-important;
+}
