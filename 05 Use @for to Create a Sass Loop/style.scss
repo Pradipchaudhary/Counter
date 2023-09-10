@@ -1,22 +1,29 @@
+$base-color: #036;
+$text-color: #fff;
+
+@mixin space {
+    padding: 10px;
+    margin: 10px;
+}
+@mixin border($value) {
+    border: $value solid #efefef;
+}
+
+@for $i from 1 through 12 {
+    p.text-#{$i} {
+        width: 100%/12 * $i;
+        border: 1px solid #efefef;
+        @include space();
+        background-color: lighten($base-color, $i * 5%);
+        color: lighten($text-color, $i * 5%);
+    }
+}
+
+// SCSS SYNTAX
+// $base-color: #036;
+
 // @for $i from 1 through 3 {
 //     ul:nth-child(3n + #{$i}) {
 //         background-color: lighten($base-color, $i * 5%);
 //     }
 // }
-
-@for $i from 1 through 12 {
-    .col-#{$i} {
-        width: 100%/12 * $i;
-    }
-}
-
-// SCSS SYNTAX
-$base-color: #036;
-
-@for $i from 1 through 3 {
-    ul:nth-child(3n + #{$i}) {
-        background-color: lighten($base-color, $i * 5%);
-        padding: 10px;
-        margin: 10px;
-    }
-}

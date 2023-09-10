@@ -1,65 +1,107 @@
-.col-1 {
+p.text-1 {
   width: 8.3333333333%;
-}
-
-.col-2 {
-  width: 16.6666666667%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.3333333333%;
-}
-
-.col-5 {
-  width: 41.6666666667%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.3333333333%;
-}
-
-.col-8 {
-  width: 66.6666666667%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.3333333333%;
-}
-
-.col-11 {
-  width: 91.6666666667%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-ul:nth-child(3n+1) {
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
   background-color: #004080;
-  padding: 10px;
-  margin: 10px;
+  color: white;
 }
 
-ul:nth-child(3n+2) {
+p.text-2 {
+  width: 16.6666666667%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
   background-color: #004d99;
-  padding: 10px;
-  margin: 10px;
+  color: white;
 }
 
-ul:nth-child(3n+3) {
-  background-color: #0059b3;
+p.text-3 {
+  width: 25%;
+  border: 1px solid #efefef;
   padding: 10px;
   margin: 10px;
+  background-color: #0059b3;
+  color: white;
+}
+
+p.text-4 {
+  width: 33.3333333333%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #0066cc;
+  color: white;
+}
+
+p.text-5 {
+  width: 41.6666666667%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #0073e6;
+  color: white;
+}
+
+p.text-6 {
+  width: 50%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #0080ff;
+  color: white;
+}
+
+p.text-7 {
+  width: 58.3333333333%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #1a8cff;
+  color: white;
+}
+
+p.text-8 {
+  width: 66.6666666667%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #3399ff;
+  color: white;
+}
+
+p.text-9 {
+  width: 75%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #4da6ff;
+  color: white;
+}
+
+p.text-10 {
+  width: 83.3333333333%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #66b3ff;
+  color: white;
+}
+
+p.text-11 {
+  width: 91.6666666667%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #80bfff;
+  color: white;
+}
+
+p.text-12 {
+  width: 100%;
+  border: 1px solid #efefef;
+  padding: 10px;
+  margin: 10px;
+  background-color: #99ccff;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
