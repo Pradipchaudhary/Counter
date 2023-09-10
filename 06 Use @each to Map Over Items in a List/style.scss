@@ -1,0 +1,25 @@
+@each $color in blue, red, green {
+    .#{$color}-bg {
+        background-color: $color;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 1px solid #efefef;
+    }
+}
+
+// $colors: (
+//     color1: blue,
+//     color2: red,
+//     color3: green,
+// );
+
+// @each $key, $color in $colors {
+//     .#{$color}-bg {
+//         background-color: $color;
+//         width: 200px;
+//         height: 200px;
+//         margin: 10px;
+//         border: 1px solid #efefef;
+//     }
+// }

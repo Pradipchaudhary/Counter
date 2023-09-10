@@ -1,0 +1,23 @@
+.blue-bg {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #efefef;
+}
+
+.red-bg {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #efefef;
+}
+
+.green-bg {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #efefef;
+}/*# sourceMappingURL=style.css.map */
