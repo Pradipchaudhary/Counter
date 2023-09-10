@@ -1,0 +1,12 @@
+@import "reset";
+@import "variables";
+@import "header";
+@import "footer";
+
+.home {
+    width: 100%;
+    height: 800px;
+    @include d-flex;
+    @include justify-center;
+    @include aligin-centered;
+}

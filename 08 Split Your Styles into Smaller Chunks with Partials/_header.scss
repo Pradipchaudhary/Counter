@@ -1,0 +1,28 @@
+@import "mixins";
+header {
+    width: 100%;
+    background-color: #efefef;
+    .nav {
+        @include container;
+        @include d-flex;
+        @include spacebetween;
+        @include aligin-centered;
+
+        a.title {
+            text-decoration: none;
+            color: #212121;
+            font-size: 2rem;
+            padding: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            @include d-flex;
+            gap: 10px;
+
+            li {
+                @include nav-space;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+// Import
+@import "mixins";
+
+footer {
+    background-color: #212121;
+    color: #efefef;
+    padding: 30px;
+    @include space50;
+    @include d-flex;
+    @include justify-center;
+    @include aligin-centered;
+}

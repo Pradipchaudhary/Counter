@@ -1,0 +1,29 @@
+@mixin space50 {
+    padding: 50px;
+}
+@mixin nav-space {
+    padding: 6px 18px;
+}
+@mixin d-flex {
+    display: flex;
+}
+@mixin justify-center {
+    justify-content: center;
+}
+@mixin aligin-centered {
+    align-items: center;
+}
+@mixin center {
+    display: flex;
+    align-items: center;
+}
+@mixin spacebetween {
+    justify-content: space-between;
+}
+
+@mixin container {
+    min-width: 1165px;
+    max-width: 1165px;
+    margin-left: auto;
+    margin-right: auto;
+}
