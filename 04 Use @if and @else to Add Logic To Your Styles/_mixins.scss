@@ -1,0 +1,23 @@
+@mixin make-bold($bold) {
+    @if $bold == true {
+        font-weight: bold;
+    }
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border-stroke($val) {
+    @if $val == light {
+        border: 1px solid rgb(217, 112, 112);
+    } @else if $val == medium {
+        border: 3px solid rgb(200, 200, 200);
+    } @else if $val == heavy {
+        border: 6px solid rgb(238, 97, 97);
+    } @else {
+        border: none;
+    }
+}

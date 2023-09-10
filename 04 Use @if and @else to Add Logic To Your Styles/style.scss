@@ -1,0 +1,9 @@
+@import "reset";
+@import "mixins";
+
+.container {
+    @include center;
+    width: 100%;
+    height: 100vh;
+    @include border-stroke(medium);
+}
