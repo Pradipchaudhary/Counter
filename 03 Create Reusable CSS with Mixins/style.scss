@@ -1,0 +1,14 @@
+@import "mixins";
+
+.container {
+    @include important-text;
+    background-color: green;
+    @include flex;
+}
+
+.box {
+    @include box-shadow(0px, 0px, 4px, #fff);
+    border: 1px solid #212121;
+    @include space5;
+    @include spacetopbutton(200px, 20px, 50px);
+}

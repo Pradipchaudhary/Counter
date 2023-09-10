@@ -1,0 +1,28 @@
+@mixin important-text {
+    color: rgb(222, 87, 87);
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Define mixin with two arguments */
+@mixin box-shadow($x, $y, $blur, $c) {
+    -webkit-box-shadow: $x $y $blur $c;
+    -moz-box-shadow: $x $y $blur $c;
+    -ms-box-shadow: $x $y $blur $c;
+    box-shadow: $x $y $blur $c;
+}
+
+@mixin space5 {
+    padding: 10px;
+}
+
+@mixin spacetopbutton($spacetop, $spacebutton, $spaceleft) {
+    margin: $spacetop 0px $spacebutton $spaceleft;
+}
