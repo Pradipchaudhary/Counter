@@ -14,11 +14,20 @@ In JavaScript, variables are defined using the let and const keywords. In Sass, 
 
 Here are a couple examples:
 
-2. [Nest CSS with Sass](https://github.com/pradipchaudhary/SASS/tree/master/02%20Nest%20CSS%20with%20Sass)
-3. [Create Reusable CSS with Mixins](https://github.com/pradipchaudhary/SASS/tree/master/03%20Create%20Reusable%20CSS%20with%20Mixins)
-4. [Use @if and @else to Add Logic To Your Styles](https://github.com/pradipchaudhary/SASS/tree/master/04%20Use%20%40if%20and%20%40else%20to%20Add%20Logic%20To%20Your%20Styles)
-5. [Use @for to Create a Sass Loop](https://github.com/pradipchaudhary/SASS/tree/master/05%20Use%20%40for%20to%20Create%20a%20Sass%20Loop)
-6. [Use @each to Map Over Items in a List](https://github.com/pradipchaudhary/SASS/tree/master/05%20Use%20%40for%20to%20Create%20a%20Sass%20Loop)
-7. [Apply a Style Until a Condition is Met with @while](https://github.com/pradipchaudhary/SASS/tree/master/07%20Apply%20a%20Style%20Until%20a%20Condition%20is%20Met%20with%20%40while)
-8. [Split Your Styles into Smaller Chunks with Partials](https://github.com/pradipchaudhary/SASS/tree/master/08%20Split%20Your%20Styles%20into%20Smaller%20Chunks%20with%20Partials)
-9. [Extend One Set of CSS Styles to Another Element](https://github.com/pradipchaudhary/SASS/tree/master/09%20Extend%20One%20Set%20of%20CSS%20Styles%20to%20Another%20Element)
+```sass
+$fonts: "Roboto", Helvetica, sans-serif;
+$primary-color: #ab99ca;
+
+```
+
+And to use the variables:
+
+```sass
+body {
+    font-family: $fonts; /* variable usage */
+    background-color: $primary-color;
+    min-height: 100vh;
+}
+```
+
+One example where variables are useful is when a number of elements need to be the same color. If that color is changed, the only place to edit the code is the variable value. 2. [Nest CSS with Sass](https://github.com/pradipchaudhary/SASS/tree/master/02%20Nest%20CSS%20with%20Sass) 3. [Create Reusable CSS with Mixins](https://github.com/pradipchaudhary/SASS/tree/master/03%20Create%20Reusable%20CSS%20with%20Mixins) 4. [Use @if and @else to Add Logic To Your Styles](https://github.com/pradipchaudhary/SASS/tree/master/04%20Use%20%40if%20and%20%40else%20to%20Add%20Logic%20To%20Your%20Styles) 5. [Use @for to Create a Sass Loop](https://github.com/pradipchaudhary/SASS/tree/master/05%20Use%20%40for%20to%20Create%20a%20Sass%20Loop) 6. [Use @each to Map Over Items in a List](https://github.com/pradipchaudhary/SASS/tree/master/05%20Use%20%40for%20to%20Create%20a%20Sass%20Loop) 7. [Apply a Style Until a Condition is Met with @while](https://github.com/pradipchaudhary/SASS/tree/master/07%20Apply%20a%20Style%20Until%20a%20Condition%20is%20Met%20with%20%40while) 8. [Split Your Styles into Smaller Chunks with Partials](https://github.com/pradipchaudhary/SASS/tree/master/08%20Split%20Your%20Styles%20into%20Smaller%20Chunks%20with%20Partials) 9. [Extend One Set of CSS Styles to Another Element](https://github.com/pradipchaudhary/SASS/tree/master/09%20Extend%20One%20Set%20of%20CSS%20Styles%20to%20Another%20Element)
