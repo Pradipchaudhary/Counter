@@ -6,7 +6,7 @@ Sass, or "Syntactically Awesome StyleSheets", is a language extension of CSS. It
 
 In this Sass course, you'll learn how to store data in variables, nest CSS, create reusable styles with mixins, add logic and loops to your styles, and more.
 
-### 1. [Store Data with Sass Variables](https://github.com/pradipchaudhary/SASS/tree/master/01%20Store%20Data%20with%20Sass%20Variables)
+## 1. [Store Data with Sass Variables](https://github.com/pradipchaudhary/SASS/tree/master/01%20Store%20Data%20with%20Sass%20Variables)
 
 One feature of Sass that's different than CSS is it uses variables. They are declared and set to store data, similar to JavaScript.
 
@@ -34,7 +34,74 @@ One example where variables are useful is when a number of elements need to be t
 
 ## 2. [Nest CSS with Sass](https://github.com/pradipchaudhary/SASS/tree/master/02%20Nest%20CSS%20with%20Sass)
 
+Sass allows nesting of CSS rules, which is a useful way of organizing a style sheet.
+
+Normally, each element is targeted on a different line to style it, like so:
+
+```sass
+nav {
+  background-color: red;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+```
+
+For a large project, the CSS file will have many lines and rules. This is where nesting can help organize your code by placing child style rules within the respective parent elements:
+
+```sass
+nav {
+  background-color: red;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+```
+
 ## 3. [Create Reusable CSS with Mixins](https://github.com/pradipchaudhary/SASS/tree/master/03%20Create%20Reusable%20CSS%20with%20Mixins)
+
+In Sass, a mixin is a group of CSS declarations that can be reused throughout the style sheet.
+
+Newer CSS features take time before they are fully adopted and ready to use in all browsers. As features are added to browsers, CSS rules using them may need vendor prefixes. Consider box-shadow:
+
+```sass
+div {
+  -webkit-box-shadow: 0px 0px 4px #fff;
+  -moz-box-shadow: 0px 0px 4px #fff;
+  -ms-box-shadow: 0px 0px 4px #fff;
+  box-shadow: 0px 0px 4px #fff;
+}
+```
+
+It's a lot of typing to re-write this rule for all the elements that have a box-shadow, or to change each value to test different effects. Mixins are like functions for CSS. Here is how to write one:
+
+```sass
+@mixin box-shadow($x, $y, $blur, $c){
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+```
+
+The definition starts with @mixin followed by a custom name. The parameters (the $x, $y, $blur, and $c in the example above) are optional. Now any time a box-shadow rule is needed, only a single line calling the mixin replaces having to type all the vendor prefixes. A mixin is called with the @include directive:
+
+```sass
+div {
+  @include box-shadow(0px, 0px, 4px, #fff);
+}
+```
 
 ## 4. [Use @if and @else to Add Logic To Your Styles](https://github.com/pradipchaudhary/SASS/tree/master/04%20Use%20%40if%20and%20%40else%20to%20Add%20Logic%20To%20Your%20Styles)
 
